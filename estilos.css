@@ -1,0 +1,585 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+/*barra navegacion */
+
+
+nav {
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat";
+    font-weight: bold;
+    align-items: center;
+}
+
+li {
+    margin: 0 5px;
+}
+
+a {
+    color: #3B0054;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #F60395;
+}
+
+#logo img {
+    height: 50px;
+    width: auto;
+}
+
+.iconoHome {
+    width: 1rem;
+    height: auto;
+}
+
+/*home */
+
+.banner {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner img.bannerhome {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*seccion tarjetas*/
+.img-card-home {
+    width: 100%;
+}
+
+.flip-card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: auto;
+    perspective: 1000px;
+    margin: 0 10px;
+
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/*boton*/
+.seccion-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40%;
+}
+
+.btn-solicitar {
+    width: 30%;
+    padding: auto;
+}
+
+/*foter*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10vh;
+    bottom: 0;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.footer-arriba {
+    display: flex;
+    flex-direction: row;
+    background-color: #3B0054;
+    width: 100%;
+    height: 80vh;
+}
+
+.footer-abajo {
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.logowonderlan {
+    width: 90%;
+}
+
+.gifMarca {
+    width: 20%;
+}
+
+.demarca {
+    font-family: "Montserrat";
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+.span1 {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+.span2 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.span3 {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.span4 {
+    width: 40%;
+    display: flex;
+    align-content: center;
+}
+
+.icono-rrss {
+    width: 2rem;
+    height: auto;
+    padding: 5px;
+}
+
+.div-rrss {
+    width: 50%;
+}
+
+.div-derecho-footer {
+    width: 50%;
+
+}
+
+.txtFooter {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.txt-footer {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px;
+    color: #AAAAAA;
+}
+
+.img-logo-blanco {
+    width: 30%;
+    padding: 10px;
+}
+
+.img-footer-logo {
+    height: 40vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+/*pagina 2- quienes somos*/
+
+.cont1-quieneSomos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: #3B0054;
+}
+
+.img-quienesSomos {
+    width: 45%;
+    height: 100%;
+    margin: 2%;
+}
+.img2-quienesSomos {
+    width: 90%;
+    height: auto;
+}
+.txt-quienesomos {
+    width: 50%;
+    height: auto;
+    text-align: justify;
+    margin: 3%;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt2-quienesomos {
+    width: 50%;
+    height: auto;
+    text-align: justify;
+    font-family: "Montserrat";
+    display: flex;
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subt-quienesomos {
+    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    margin: 4%;
+}
+
+.seccion-img-txt2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont2-quieneSomos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    color: #3B0054;
+}
+
+.cont3-quienessomos {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 4%;
+    font-family: "Montserrat";
+    color: #3B0054;
+}
+
+.cont4-quienessomos {
+    box-sizing: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 0;
+    font-family: "Montserrat";
+    color: #3B0054;
+    background-color: #AAAA;
+}
+
+.txt-cont4 {
+    width: 90%;
+   margin: 5%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+.seccion2-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    /*tarjetas home*/
+    .flip-card {
+        width: 45%;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 50rem;
+        perspective: 1000px;
+        margin: 5px;
+    }
+
+    .flip-card-container {
+        margin: 0;
+        height: 80rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .img-card-home {
+        width: 95%;
+        padding: 0.2rem;
+        margin: 0.2rem;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-items: center;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    /*boton*/
+
+    .seccion-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .btn-solicitar {
+        width: 60%;
+        padding: auto;
+    }
+
+    /*foter*/
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #3B0054;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+        height: 40vh;
+        box-sizing: border-box;
+    }
+
+    .footer-arriba,
+    .footer-abajo {
+        flex: 1;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10vh;
+        bottom: 0;
+        width: 100%;
+        height: 40vh;
+
+    }
+
+
+    .footer-abajo {
+        background-color: black;
+        width: 100%;
+        height: 30vh;
+        padding: 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logowonderlan {
+        width: 50%;
+    }
+
+    .gifMarca {
+        width: 30%;
+    }
+
+    .demarca {
+        font-family: "Montserrat";
+        font-size: 1rem;
+    }
+
+    .span1,
+    .span2,
+    .span3,
+    .span4 {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    /*footer de arriba*/
+    .footer-arriba {
+        background-color: #3B0054;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icono-rrss {
+        width: 2rem;
+        height: auto;
+        padding: 10px;
+    }
+
+    .div-derecho-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .div-rrss {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .txtFooter {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .txt-footer {
+        width: 100%;
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 5px;
+        color: #AAAAAA;
+        text-align: center;
+    }
+
+    .img-logo-blanco {
+        width: 30%;
+    }
+
+    .img-footer-logo {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*pagina: quienes somos*/
+    .cont1-quieneSomos,
+    .cont2-quieneSomos {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #3B0054;
+        margin: 5px;
+
+    }
+
+    .txt-quienesomos,
+    .txt2-quienesomos {
+        width: 90%;
+        height: auto;
+        text-align: justify;
+        margin: 2%;
+        font-family: "Montserrat";
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subt-quienesomos {
+        text-align: start;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccion-img-txt2 {
+        height: 100%;
+        padding: 2%;
+    }
+}
