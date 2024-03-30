@@ -111,8 +111,15 @@ a:hover {
 }
 
 /*boton*/
+button{
+    width: 60%;
+    background-color: transparent;
+    border: none;
+
+}
 .seccion-btn {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     margin-top: 40%;
@@ -261,10 +268,12 @@ span {
     height: 100%;
     margin: 2%;
 }
+
 .img2-quienesSomos {
     width: 90%;
     height: auto;
 }
+
 .txt-quienesomos {
     width: 50%;
     height: auto;
@@ -338,20 +347,69 @@ span {
 
 .txt-cont4 {
     width: 90%;
-   margin: 5%;
+    margin: 5%;
     display: flex;
     align-content: center;
     text-align: center;
     justify-items: center;
     justify-content: center;
 }
-.seccion2-btn{
+
+.seccion2-btn {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 10%;
 }
 
+/*pagina miebros*/
+.perfil {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    color: #AAAAAA;
+}
+
+.foto-perfil {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+
+}
+
+.imagen-perfil {
+    background-color: #3B0054;
+    padding: 5%;
+    border-radius: 10%;
+    width: 20%;
+}
+
+.txt-perfil {
+    color: #3B0054;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat";
+    padding: 2%;
+
+}
+
+.perfil-link {
+
+    display: flex;
+    align-items: end;
+}
+/*pagina-articulos*/
+.espacio-articulos{
+    color: #AAAA;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*responsive*/
 @media screen and (max-width: 768px) {
     nav {
@@ -581,5 +639,36 @@ span {
     .seccion-img-txt2 {
         height: 100%;
         padding: 2%;
+    }
+
+    /*pagina miembros*/
+
+    .perfil {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .foto-perfil {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 100%;
+    }
+
+    .imagen-perfil {
+        width: 25%;
+        border-radius: 100%;
+    }
+
+    .txt-perfil {
+        color: #3B0054;
+        width: 95%;
+        text-align: center;
+    }
+
+    .perfil-link {
+        display: flex;
+        justify-content: center;
     }
 }
