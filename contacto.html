@@ -34,14 +34,280 @@
         </div>
     </nav>
 
-   
-        <div class="espacio-articulos">  
-            <h3 >FORMULARIO DE CONTACTO</h3>
-        </div>
-        <div class="seccion-btn">
-            <button><a href=""><img class="btn-solicitar" src="/assets/imagenes/BOTON- PROYECTO ATHENA.png" alt="" /></a></button>
-        </div>
 
+    <div>
+        <h3 class="titulos-form">FORMULARIO DE CONTACTO</h3>
+
+        <form id="formularioContacto">
+            <div class="form-select">
+                <div class="titulos-form">
+                    <h2>Selecciones una opcion</h2>
+                </div>
+
+                <div class="input-form-1">
+
+                    <div>
+                        <input class="input-radio" type="radio" id="empresa" name="opcion" value="empresa">
+                        <label for="empresa">Empresa</label>
+                    </div>
+                    <div>
+                        <input class="input-radio" type="radio" id="institucion" name="opcion" value="institucion">
+                        <label for="institucion">Institución Academica o Deportiva</label>
+                    </div>
+                    <div>
+                        <input class="input-radio" type="radio" id="otro" name="opcion" value="otro">
+                        <label for="otro">Particular / Otro</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="titulos-form">
+                        <h2>Información de contacto</h2>
+                    </div>
+                    <div class="datos-personales">
+                        <div class="datos1">
+                            <fieldset>
+                                <legend>Nombre completo / Razón Social</legend>
+                                <label for="nombre"></label>
+                                <input class="form-input" type="text" id="nombre" name="nombre">
+                            </fieldset>
+
+                        </div>
+                        <div class="datos1">
+                            <fieldset>
+                                <legend>Teléfono</legend>
+                                <label for="telefono"></label>
+                                <input class="form-input" type="tel" id="telefono" pattern="[0-9] {1, 15}">
+                            </fieldset>
+
+
+                        </div>
+                    </div>
+
+                    <div class="datos-personales">
+                        <div class="datos1">
+                            <fieldset>
+                                <legend>Email</legend>
+                                <label for="email"></label>
+                                <input class="form-input" type="email" id="email" name="email">
+                            </fieldset>
+
+                        </div>
+                        <div class="datos1">
+                            <fieldset>
+                                <legend>Dirección</legend>
+                                <label for="direccion"></label>
+                                <input class="form-input" type="text" id="direccion" name="direccion">
+                            </fieldset>
+
+                        </div>
+                    </div>
+
+                    <div class="datos-personales">
+                        <div class="datos1">
+                            <fieldset>
+                                <legend>Persona de Contacto</legend>
+                                <label for="contacto"></label>
+                                <input class="form-input" type="contacto" id="contacto" name="conatcto">
+                            </fieldset>
+
+                        </div>
+                        <div class="datos1">
+                            <fieldset>
+                                <legend>Horario de Contacto</legend>
+                                <label for="horario"></label>
+                                <input class="form-input" type="text" id="horario" name="horario">
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="titulos-form">
+                    <h2>Seleccione Tipo de Charla</h2>
+                </div>
+                <div class="input-form-1">
+
+                    <div>
+                        <input class="input-radio" type="radio" id="presencial" name="opcion" value="presencial">
+                        <label for="presencial">Presencial</label>
+                    </div>
+                    <div>
+                        <input class="input-radio" type="radio" id="online" name="opcion" value="online">
+                        <label for="online">Online Participativo</label>
+                    </div>
+                    <div>
+                        <input class="input-radio" type="radio" id="webinar" name="opcion" value="webinar">
+                        <label for="webinar">Webinar</label>
+                    </div>
+                </div>
+                <div class="titulos-form">
+                    <h2>Seleccione cantidad de oyentes aproximados</h2>
+                </div>
+                <div class="input-form-1">
+
+                    <div>
+                        <input class="input-radio" type="radio" id="hasta100" name="opcion" value="hasta100">
+                        <label for="hasta100">20 a 100</label>
+                    </div>
+                    <div>
+                        <input class="input-radio" type="radio" id="100a500" name="opcion" value="100a500">
+                        <label for="100a500">100 a 500</label>
+                    </div>
+                    <div>
+                        <input class="input-radio" type="radio" id="masde500" name="opcion" value="masde500">
+                        <label for="masde500">+500</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="titulos-form">
+                        <h2>Seleccione los items que desea incluir en la charla</h2>
+                    </div>
+                    <div class="seccionCheckbox">
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="identidad" name="opcion" value="identidad">
+                            </div>
+                            <div>
+                                <label for="identidad">Identidad Digital</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="checks">
+                                <input class="check" type="checkbox" id="huella" name="opcion" value="huella">
+                            </div>
+                            <div>
+                                <label for="huella">Huella Digital</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="grooming" name="opcion" value="grooming">
+                            </div>
+                            <div>
+                                <label for="grooming">Grooming</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="sharenting" name="opcion" value="sharenting">
+                            </div>
+                            <div>
+                                <label for="sharenting">Sharenting</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="sextorcion" name="opcion" value="sextorcion">
+                            </div>
+                            <div>
+                                <label for="sextorcion">Sextorción</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="amenazas" name="opcion" value="amenazas">
+                            </div>
+                            <div>
+                                <label for="amenazas">Amenazas y riesgos en línea</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="contraseñas" name="opcion" value="contraseñas">
+                            </div>
+                            <div>
+                                <label for="contraseñas">Contraseñas seguras</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="seguridad" name="opcion" value="seguridad">
+                            </div>
+                            <div>
+                                <label for="seguridad">Seguridad en redes Wi-Fi</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="privacidad" name="opcion" value="privacidad">
+                            </div>
+                            <div>
+                                <label for="privacidad">Privacidad en línea</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="redes" name="opcion" value="redes">
+                            </div>
+                            <div>
+                                <label for="redes">Seguridad en las redes sociales</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="dispositivos" name="opcion"
+                                    value="dispositivos">
+                            </div>
+                            <div>
+                                <label for="dispositivos">Seguridad en dispositivos móviles</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="pishing" name="opcion" value="pishing">
+                            </div>
+                            <div>
+                                <label for="pishing">Phishing y ingeniería social</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="seguridadentrabajo" name="opcion"
+                                    value="seguridadentrabajo">
+                            </div>
+                            <div>
+                                <label for="seguridadentrabajo">Seguridad en el lugar de trabajo</label>
+                            </div>
+                        </div>
+                        <div class="checks">
+                            <div>
+                                <input class="check" type="checkbox" id="estafas" name="opcion" value="estafas">
+                            </div>
+                            <div>
+                                <label for="estafas">Estafas Virtuales</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="titulos-form">
+                    <h2>Escribí tu mensaje o comentario con información adicional que consideres necesaria</h2>
+                </div>
+                <div class="secciontextarea">
+                    <label for="mensaje"></label>
+                    <textarea class="textarea" name="mensaje" id="mensaje" cols="30" rows="10"
+                        placeholder="Dejanos tu mensaje o comentario..."></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+
+   
+
+    <div class="seccion-btn">
+        <button id="enviarCorreo" style="background: none; border: none; padding: 0; margin: 0; cursor: pointer;">
+            <img class="btn-solicitar" src="/assets/imagenes/BOTON- PROYECTO ATHENA.png" alt="Enviar">
+        </button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="/assets/imagenes/atomo-logo.png" alt="Éxito" style="width: 100px; height: 100px;">
+          <p>El formulario ha sido enviado con éxito. <br> Pronto nos estaremos poniendo en contacto.</p>
+        </div>
+      </div>
     <footer class="footer">
         <div class="footer-arriba">
             <div class="div-rrss">
@@ -76,7 +342,7 @@
             <span class="span4"><img class="gifMarca" src="/assets/imagenes/okay-cheshire.gif" alt=""></span>
         </div>
     </footer>
-
+    <script src="/script.js"></script>
 </body>
 
 </html>
