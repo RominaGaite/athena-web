@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    height: auto;
+    height:auto;
 }
 
 
@@ -113,7 +113,13 @@ a:hover {
 
 /*boton*/
 
-
+.seccion-btn-home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 45%;
+}
 .seccion-btn {
     width: 100%;
     height: auto;
@@ -121,9 +127,22 @@ a:hover {
     justify-content: center;
     margin-top: 5%;
 }
-
+.seccion-btn-quienes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.seccion-btn-miembros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
 .btn-solicitar {
-    width: 30%;
+    width: 50%;
     padding: auto;
 }
 
@@ -544,6 +563,11 @@ label {
     font-size: 28px;
     font-weight: bold;
 }
+.btn-contacto{
+    background-color: transparent;
+    border: none;
+}
+
 /*responsive*/
 @media screen and (max-width: 768px) {
     nav {
